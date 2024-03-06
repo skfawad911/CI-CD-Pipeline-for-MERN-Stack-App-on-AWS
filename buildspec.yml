@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20  # Specify the Node.js version you're using
+    commands:
+      - cd iCreateVideoBackend/  # Navigate to the backend directory
+      - npm ci  # Install backend dependencies
+      - cd ..  # Navigate back to the project root directory
+      - cd iCreateVideoClient  # Navigate to the frontend directory
+      - npm ci  # Install frontend dependencies
+  build:
+    commands:
+      # Build frontend (React) code
+      - npm run build 
+  post_build:
+    commands:
+      # Start backend server (replace 'server.js' with your actual server file)
+      - echo "Build completed successfully"
+artifacts:
+  files:
+    - '**/*'  # Include all files in the artifact
+  base-directory: 'iCreateVideoClient/build'  # Specify the directory where the built frontend code is located
