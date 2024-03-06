@@ -39,7 +39,7 @@ Create a GitHub repository and push your MERN stack application code to it.
 ### Step 4: Skip Deployment (Optional)
 
 Since i am  focusing on Continuous Integration in this setup, I can skip the deployment stage for now. This pipeline will automatically build and test your application whenever changes are pushed to the repository.
-  <img src="screenshots/CodePipline.png" alt="CodePipeline">
+  <img src="screenshots/CodePipeline.png" alt="CodePipeline">
 
 ## Implementation 
 Now if i make any commits on my github repository CodePipeline will automatically detect the change and invoke the Codebuild process
