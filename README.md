@@ -47,6 +47,12 @@ Now if i make any commits on my github repository CodePipeline will automaticall
   <img src="screenshots/Commit.png" alt="Commit">
   <img src="screenshots/CodePipeline_Success.png" alt="CodePipeline_Success">
   
+
+## Steps to Setup Continuous Deployement (CD)
+
+Soon..............
+
+
 ## Additional Information
 
 - For more details on AWS CodeBuild, refer to the [AWS CodeBuild Documentation](https://docs.aws.amazon.com/codebuild/index.html).
